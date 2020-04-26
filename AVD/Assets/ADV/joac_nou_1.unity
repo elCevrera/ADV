@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7194,7 +7194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769003616}
   m_LocalRotation: {x: 0.23855832, y: 0.39208794, z: 0.34884974, w: 0.81710523}
-  m_LocalPosition: {x: 23.741283, y: 6.672205, z: 12.217618}
+  m_LocalPosition: {x: 15.21, y: 7.9, z: 6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 134897154}
@@ -7727,8 +7727,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809947550}
-  m_LocalRotation: {x: 0.35028204, y: -0.59488225, z: 0.32151878, w: 0.6481075}
-  m_LocalPosition: {x: -31.888985, y: 8.678062, z: -11.978634}
+  m_LocalRotation: {x: 0.42800263, y: -0.38315797, z: 0.2070882, w: 0.79190797}
+  m_LocalPosition: {x: -33.269787, y: 8.678062, z: -11.794189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8584,8 +8584,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980458898}
-  m_LocalRotation: {x: 0.35028204, y: -0.59488225, z: 0.32151878, w: 0.6481075}
-  m_LocalPosition: {x: -31.888985, y: 8.678062, z: -11.978634}
+  m_LocalRotation: {x: 0.42800263, y: -0.38315797, z: 0.2070882, w: 0.79190797}
+  m_LocalPosition: {x: -33.269787, y: 8.678062, z: -11.794189}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1444179243}
@@ -10749,8 +10749,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668868910273}
-  m_LocalRotation: {x: -0, y: 0.82556605, z: -0, w: 0.5643055}
-  m_LocalPosition: {x: -35.764744, y: 2.7380624, z: -11.646085}
+  m_LocalRotation: {x: -0, y: 0.9916189, z: -0, w: 0.12919784}
+  m_LocalPosition: {x: -36.32, y: 2.7380624, z: -9.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3282880781538977761}
@@ -10758,7 +10758,7 @@ Transform:
   - {fileID: 346330356}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 111.29201, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 165.154, z: 0}
 --- !u!4 &5010455349471167361
 Transform:
   m_ObjectHideFlags: 0
