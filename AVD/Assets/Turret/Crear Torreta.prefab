@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6142996673356861010
+--- !u!1 &8589861459667039530
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4441836665381649326}
-  - component: {fileID: 1837736558614170581}
-  - component: {fileID: 6330015125976422374}
-  - component: {fileID: 49313239789436162}
-  - component: {fileID: 5641898495786201410}
-  - component: {fileID: 5576217054340603934}
+  - component: {fileID: 7259722072001627052}
+  - component: {fileID: 1755089758831726098}
+  - component: {fileID: 2416153113785627851}
+  - component: {fileID: 7249239854825856098}
+  - component: {fileID: 8670874725835838066}
+  - component: {fileID: 4773637990301501084}
   m_Layer: 0
   m_Name: Crear Torreta
   m_TagString: Untagged
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4441836665381649326
+--- !u!4 &7259722072001627052
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.51, y: 1.02, z: -0.42422962}
-  m_LocalScale: {x: 0.74929, y: 0.74929, z: 0.74929}
+  m_LocalPosition: {x: -35.752354, y: 3.1150203, z: -10.966105}
+  m_LocalScale: {x: 0.34019005, y: 0.34019005, z: 0.34019005}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1837736558614170581
+--- !u!33 &1755089758831726098
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6330015125976422374
+--- !u!23 &2416153113785627851
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,26 +82,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &49313239789436162
+--- !u!135 &7249239854825856098
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &5641898495786201410
+--- !u!54 &8670874725835838066
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -111,19 +111,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5576217054340603934
+--- !u!114 &4773637990301501084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6142996673356861010}
+  m_GameObject: {fileID: 8589861459667039530}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52dbca661ada4f43b9f2df3553f0c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torretaPrefab: {fileID: 5655850045005429216, guid: 60014f7eecd68304faa10eea428244fb,
+  torretaPrefab: {fileID: 1588424478197290029, guid: af401b84a150ce945b435af3e06bd394,
     type: 3}
-  speed: 5
+  speed: 2
   damage: 10

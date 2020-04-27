@@ -24,10 +24,10 @@ public class turretInstantier : MonoBehaviour
             GameObject[] torretes = GameObject.FindGameObjectsWithTag("torreta");
             foreach (GameObject torreta in torretes)
             {
-                //torreta.GetComponent<Animator>().SetTrigger("Dead");
+                torreta.GetComponent<Animator>().SetTrigger("Dead");
                 GameObject.Destroy(torreta);
             }
-            Instantiate(torretaPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            Instantiate(torretaPrefab, transform.position, Quaternion.Euler(new Vector3(0, 60, 0)));
             Destroy(gameObject);
         }
         else { Destroy(gameObject); }

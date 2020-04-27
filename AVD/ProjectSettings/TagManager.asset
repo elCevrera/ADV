@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Disco
   - Ground
+  - ground
+  - pelota
+  - torreta
+  - Item
   layers:
   - Default
   - TransparentFX

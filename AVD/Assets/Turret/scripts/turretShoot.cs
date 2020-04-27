@@ -30,6 +30,8 @@ public class turretShoot : MonoBehaviour
     {
         GetComponent<AudioSource>().PlayOneShot(transformer);
     }
+
+
     void Empezar()
     {
         StartCoroutine(Fire());
@@ -38,6 +40,7 @@ public class turretShoot : MonoBehaviour
         muzzleFlash.SetActive(false);
         animT = GetComponent<Animator>();
         audioS = GetComponent<AudioSource>();
+        
     }
 
 
@@ -52,16 +55,17 @@ public class turretShoot : MonoBehaviour
     private int i = 0;
     IEnumerator Fire()
     {
+        
+            Instantiate(bulletPrefab, BulletPositions[i].position, BulletPositions[i].rotation);
+            GetComponent<AudioSource>().PlayOneShot(hitsound);
+            i++;
+            if (i >= BulletPositions.Length) i = 0;
+            yield return new WaitForSeconds(1 / frequency);
+            randomMuzzel = Random.Range(0, muzzelPos.Length);
+            muzzleFlash.SetActive(true);
 
-        Instantiate(bulletPrefab, BulletPositions[i].position, BulletPositions[i].rotation);
-        GetComponent<AudioSource>().PlayOneShot(hitsound);
-        i++;
-        if (i >= BulletPositions.Length) i = 0;
-        yield return new WaitForSeconds(1 / frequency);
-        randomMuzzel = Random.Range(0, muzzelPos.Length);
-        muzzleFlash.SetActive(true);
-
-        StartCoroutine(Fire());
+            StartCoroutine(Fire());
+        
     }
 
 
@@ -75,7 +79,7 @@ public class turretShoot : MonoBehaviour
         yield return new WaitForSeconds(5);
         GetComponent<Animator>().SetTrigger("Dead");
         GetComponent<AudioSource>().PlayOneShot(explosion);
-        particle.Play();
+        //particle.Play();
     }
 
     void Die2ndTime() 
@@ -92,8 +96,8 @@ public class turretShoot : MonoBehaviour
         {
             if (Time.time >= nextMoveTime)
             {
-                Debug.Log("Holi");
                 aim.LookAt(target);
+                Debug.Log(target.gameObject.name);
                 aim.eulerAngles = new Vector3(0, aim.eulerAngles.y, 0);
                 head.rotation = Quaternion.Lerp(head.rotation, aim.rotation, Time.deltaTime * turnSpeed);
             }

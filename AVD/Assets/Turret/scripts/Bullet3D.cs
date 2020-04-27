@@ -18,13 +18,13 @@ public class Bullet3D : MonoBehaviour
     }
     void OnTriggerEnter(Collider collision)
     {
-        /*Enemy3D enemy = collision.GetComponent<Enemy3D>(); dañar zombies
+        Enemy3D enemy = collision.GetComponent<Enemy3D>(); //dañar zombies
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
         }
             Destroy(gameObject);
-            */
+            
     }
 
 }
